@@ -1,0 +1,31 @@
+<% include ../partials/header %>
+
+<div class="el">
+  <div class="contents">
+    <p>Your Access Token:</p>
+    <p><%= tokenVal %></p>
+    <hr />
+    <p>Your Endpoint is</p>
+    <p id="endpoint">
+      https://api.dribbble.com/v2/user/shots?access_token=<%= tokenVal %>
+    </p>
+    <div id="new-token">
+      <a
+        class="cta"
+        href="https://api.dribbble.com/v2/user/shots?access_token=<%= tokenVal %>"
+        target="_BLANK"
+        >Go To Endpoint</a
+      >
+    </div>
+
+    <div id="coming-soon">
+      <h1>Code samples coming soon...</h1>
+      <h5>
+        Follow for updates:
+        <a href="https://twitter.com/ispykenny" target="_BLANK">@ispykenny</a>
+      </h5>
+    </div>
+  </div>
+</div>
+
+<% include ../partials/footer %>
